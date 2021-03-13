@@ -1,0 +1,26 @@
+{
+  "id": "html-ASDFGHJKKL",
+  "class": "html-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-html",
+  "parent": "",
+  "type": "content",
+  "value": "<h2>This is HTML</h2>",
+  "show": "",
+  "style": {
+    "background": "transparent",
+    "padding": "2px",
+    "margin": "0px",
+    "borderWidth": "0px",
+    "borderStyle": "solid",
+    "borderColor": "#000000",
+    "borderRadius": "5px",
+    "textShadow": "0px 0px 0px #000000",
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "cursor": "pointer",
+    "width": "100%"
+  },
+  "addOnStyle": {},
+  "staticStyle": ""
+}

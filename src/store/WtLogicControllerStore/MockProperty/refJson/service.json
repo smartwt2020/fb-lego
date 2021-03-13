@@ -1,0 +1,11 @@
+{
+  "abc": {
+    "name": "abc",
+    "about": "",
+    "rule": "// write your logic",
+    "type": "service",
+    "created": "2020-06-10T05:14:34.302Z",
+    "lastUpdated": "2020-06-10T05:14:34.302Z",
+    "selected": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "static": {
+    "name": "static",
+    "about": "",
+    "type": "static",
+    "data": "",
+    "error": "no error found 1",
+    "configuration": {
+      "DsType": "static",
+      "type": "string",
+      "value": ""
+    },
+    "created": "2020-06-10T05:14:46.485Z",
+    "lastUpdated": "2020-06-10T05:14:46.485Z",
+    "selected": false
+  },
+  "http": {
+    "name": "http",
+    "about": "",
+    "type": "http",
+    "data": "No Data",
+    "configuration": {
+      "DsType": "http",
+      "type": "string",
+      "method": "get",
+      "url": "",
+      "baseURL": "",
+      "headers": {},
+      "params": {},
+      "data": {},
+      "timeout": 10000,
+      "withCredentials": false,
+      "auth": {
+        "username": "",
+        "password": ""
+      },
+      "responseType": "json",
+      "proxy": {
+        "host": "127.0.0.1",
+        "port": 9000,
+        "auth": {
+          "username": "",
+          "password": ""
+        }
+      }
+    },
+    "created": "2020-06-10T05:15:01.693Z",
+    "lastUpdated": "2020-06-10T05:15:01.693Z",
+    "selected": false
+  }
+}

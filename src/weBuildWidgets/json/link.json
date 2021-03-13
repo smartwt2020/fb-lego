@@ -1,0 +1,36 @@
+{
+  "id": "link-ASDFGHJKKL",
+  "class": "link-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-link",
+  "parent": "",
+  "type": "action",
+  "value": "link",
+  "show": "",
+  "href": "#",
+  "target": true,
+  "style": {
+    "fontSize": "16px",
+    "fontWeight": "normal",
+    "textAlign": "left",
+    "color": "#000000",
+    "background": "transparent",
+    "textDecoration": "none",
+    "fontStyle": "normal",
+    "padding": "0px",
+    "margin": "0px",
+    "borderWidth": "0px",
+    "borderRadius": "0px",
+    "borderStyle": "unset",
+    "borderColor": "#000000",
+    "textShadow": "0px 0px 0px #000000",
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "cursor": "pointer"
+  },
+  "sudoStyle": {
+    "hover": {}
+  },
+  "addOnStyle": {},
+  "staticStyle": ""
+}

@@ -1,0 +1,27 @@
+{
+  "id": "image-ASDFGHJKKL",
+  "class": "image-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-image",
+  "parent": "",
+  "type": "media",
+  "show": "",
+  "src": "https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg",
+  "fit": true,
+  "style": {
+    "background": "transparent",
+    "padding": "0px",
+    "margin": "0px",
+    "borderWidth": "0px",
+    "borderStyle": "unset",
+    "borderColor": "#000000",
+    "borderRadius": "0px",
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "cursor": "pointer"
+  },
+  "events": {},
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}

@@ -1,0 +1,45 @@
+{
+  "_from": "wt-logic-controller@1.0.7",
+  "_id": "wt-logic-controller@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-EAMbCXBl3sp8SvWyI6ITKetGASoC6PhKMudQNKqLeB22LvCfmn4emK7KL+zn7LrCBoqWKq61PR4yJpzSzLOd7Q==",
+  "_location": "/wt-logic-controller",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "wt-logic-controller@1.0.7",
+    "name": "wt-logic-controller",
+    "escapedName": "wt-logic-controller",
+    "rawSpec": "1.0.7",
+    "saveSpec": null,
+    "fetchSpec": "1.0.7"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/wt-logic-controller/-/wt-logic-controller-1.0.7.tgz",
+  "_shasum": "602127b60f72bedffe7392b12b6cc00453864212",
+  "_spec": "wt-logic-controller@1.0.7",
+  "_where": "/home/pikachu/Desktop/workspace/dl_lib/wt-widget",
+  "author": {
+    "name": "shubham"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "asw-logger": "^1.0.3"
+  },
+  "deprecated": false,
+  "description": "this is for logic section controller ",
+  "keywords": [
+    "utills"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "wt-logic-controller",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.7"
+}

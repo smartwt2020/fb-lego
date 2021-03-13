@@ -1,0 +1,51 @@
+{
+  "id": "barChart-ASDFGHJKKL",
+  "class": "barChart-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-bar-chart",
+  "parent": "",
+  "type": "chart",
+  "show": "",
+  "datasocket": "",
+  "configuration": {
+    "backgroundColor": "",
+    "fontFamily": "",
+    "chartTextColor": "",
+    "isSparkline": false,
+    "showToolBar": true,
+    "toolbar": {
+      "download": true,
+      "selection": true,
+      "zoom": true,
+      "pan": true,
+      "reset": true
+    },
+    "showLabel": true,
+    "showGridX": false,
+    "showGridY": true,
+    "showLegend": true,
+    "colors": [],
+    "legendPosition": "bottom",
+    "noDataText": "No Data Found",
+    "barDirection": "vertical",
+    "mode": "light",
+    "palette": "palette1",
+    "title": "",
+    "titleAligh": "",
+    "titleSize": "16px",
+    "showTooltip": true,
+    "xaxisType": "numeric",
+    "showAxisX": true,
+    "showAxisXLabel": true,
+    "showAxisY": false,
+    "showAxisYLabel": true
+  },
+  "style": {
+    
+  },
+  "events": {},
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}

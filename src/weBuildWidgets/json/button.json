@@ -1,0 +1,40 @@
+{
+  "id": "button-ASDFGHJKKL",
+  "class": "button-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-button",
+  "parent": "",
+  "type": "action",
+  "value": "Click me",
+  "show": "",
+  "style": {
+    "fontSize": "16px",
+    "fontWeight": "normal",
+    "textAlign": "left",
+    "color": "#777777",
+    "background": "transparent",
+    "textDecoration": "none",
+    "fontStyle": "normal",
+    "padding": "5px 10px 5px 10px",
+    "margin": "0px",
+    "borderWidth": "1px",
+    "borderRadius": "4px",
+    "borderStyle": "solid",
+    "borderColor": "#777777",
+    "textShadow": "0px 0px 0px #000000",
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "cursor": "pointer"
+  },
+  "events": {
+    "click": ""
+  },
+  "sudoStyle": {
+    "hover": {
+      "backgroundColor": "#777777",
+      "color": "#ffffff"
+    }
+  },
+  "addOnStyle": {},
+  "staticStyle": ""
+}

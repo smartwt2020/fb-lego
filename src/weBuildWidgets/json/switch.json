@@ -1,0 +1,22 @@
+{
+  "id": "switch-ASDFGHJKKL",
+  "class": "switch-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-switch",
+  "parent": "",
+  "type": "form",
+  "bindProperty": "",
+  "OnChange": "",
+  "show": "",
+  "size": "20px",
+  "triggerColor": "red",
+  "activeColor": "yellow",
+  "inactiveColor": "green",
+  "borderColor": "#ffffff",
+  "style": {},
+  "events": {},
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}

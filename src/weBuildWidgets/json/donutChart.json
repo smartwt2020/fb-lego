@@ -1,0 +1,45 @@
+{
+  "id": "donutChart-ASDFGHJKKL",
+  "class": "donutChart-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-donut-chart",
+  "parent": "",
+  "type": "chart",
+  "show": "",
+  "datasocket": "",
+  "configuration": {
+    "backgroundColor": "",
+    "fontFamily": "",
+    "chartTextColor": "",
+    "isSparkline": false,
+    "showToolBar": true,
+    "toolbar": {
+      "download": true,
+      "selection": true,
+      "zoom": true,
+      "pan": true,
+      "reset": true
+    },
+    "showDataLable": true,
+    "showLegend": true,
+    "legendPosition": "bottom",
+    "noDataText": "No Data Found",
+    "mode": "light",
+    "palette": "palette1",
+    "title": "",
+    "titleAligh": "",
+    "titleSize": "16px",
+    "showTooltip": true,
+    "donutSize": "50%",
+    "startAngle": 0,
+    "endAngle": 360
+  },
+  "style": {
+    
+  },
+  "events": {},
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}
