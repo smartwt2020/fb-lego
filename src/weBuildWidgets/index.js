@@ -1,5 +1,3 @@
-import './plugins/fontAwesome/index.css'
-
 import label from './widgets/label'
 import paragraph from './widgets/paragraph'
 import html from './widgets/html'
