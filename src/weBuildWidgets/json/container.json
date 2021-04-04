@@ -1,0 +1,29 @@
+{
+  "widget": "fb-widget-container",
+  "name": "fb-widget-container",
+  "id": "conatiner",
+  "class": "container",
+  "parent": null,
+  "type": "container",
+  "containerType": "panel",
+  "show": true,
+  "flexConfig": {
+    "flexDirection": "column",
+    "justifyContent": "flex-start",
+    "alignItems": "flex-start"
+  },
+  "style": {
+    "height": "100%",
+    "width": "100%",
+    "background": "#ffffff",
+    "display": "block",
+    "padding": "0px",
+    "margin": "0px",
+    "borderWidth": "0px",
+    "borderStyle": "unset",
+    "borderColor": "#000000",
+    "borderRadius": "0px",
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "addOn": {}
+  }
+}
