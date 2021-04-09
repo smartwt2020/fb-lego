@@ -9,6 +9,7 @@
   "value": "<h2>This is Paragraph</h2>",
   "show": "",
   "style": {
+    "fontFamily": "",
     "background": "transparent",
     "padding": "2px",
     "margin": "0px",

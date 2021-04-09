@@ -10,6 +10,7 @@
   "src": "https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg",
   "fit": true,
   "style": {
+    "fontFamily": "",
     "background": "transparent",
     "padding": "0px",
     "margin": "0px",

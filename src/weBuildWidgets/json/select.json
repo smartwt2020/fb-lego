@@ -11,6 +11,7 @@
   "hasDaynamicOptions": false,
   "show": "",
   "style": {
+    "fontFamily": "",
     "width": "100%",
     "fontSize": "14px",
     "fontWeight": "normal",

@@ -9,6 +9,7 @@
   "value": "Click me",
   "show": "",
   "style": {
+    "fontFamily": "",
     "fontSize": "16px",
     "fontWeight": "normal",
     "textAlign": "left",

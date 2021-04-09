@@ -9,6 +9,7 @@
   "value": "label",
   "show": "",
   "style": {
+    "fontFamily": "",
     "fontSize": "16px",
     "fontWeight": "normal",
     "textAlign": "left",
