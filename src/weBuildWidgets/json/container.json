@@ -5,6 +5,7 @@
   "class": "container",
   "parent": null,
   "type": "container",
+  "component": "container",
   "containerType": "panel",
   "show": true,
   "flexConfig": {
