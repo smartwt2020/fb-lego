@@ -86,14 +86,18 @@ export default {
     try {
       obj.data = config.value
       log.DatasourceUpdatedSuccessfully(obj.name, 'static', obj.data)
+      const dm = new Function('data', 'me', obj.updateCallback)
+      dm(obj.data, this)
+      obj.loading = false
       return true
     } catch (e) {
       log.DatasourceUpdateFail(obj.name, 'static', 'Error')
+      obj.loading = false
       return false
     }
   },
   $updateHttpDatasource: function (obj) {
-    const config = obj.configuration
+    const config = obj.datasourceConfig
     var HTTP_Config = {
       url: config.url,
       method: config.method,
@@ -104,33 +108,38 @@ export default {
       timeout: config.timeout,
       withCredentials: config.withCredentials,
       auth: {
-        username: config.auth.username,
-        password: config.auth.password
+        username: config.authUsername,
+        password: config.authPassword
       },
-      responseType: config.responseType,
       validateStatus: function (status) {
         return status >= 200 && status < 300 // default
       },
       proxy: {
-        host: config.proxy.host,
-        port: config.proxy.port,
+        host: config.proxyHost,
+        port: config.proxyPort,
         auth: {
-          username: config.proxy.auth.username,
-          password: config.proxy.auth.password
+          username: config.proxyAuthUsername,
+          password: config.proxyAuthPassword
         }
       }
     }
     axios(HTTP_Config)
       .then(function (response) {
         obj.data = response.data
-        obj.error = 'NO Error'
+        obj.errorMessage = 'NO Error'
+        obj.error = false
         obj.lastUpdated = new Date().toISOString()
         log.DatasourceUpdatedSuccessfully(obj.name, 'http', obj.data)
+        obj.loading = false
+        const dm = new Function('data', 'me', obj.updateCallback)
+        dm(obj.data, this)
       })
       .catch(function (error) {
         obj.data = 'No Data'
-        obj.error = error
+        obj.error = true
+        obj.errorMessage = error
         log.DatasourceUpdateFail(obj.name, 'http', obj.error)
+        obj.loading = false
       })
   },
   GetDataSourceData: function (name) {
@@ -144,7 +153,8 @@ export default {
   UpdateDataSource: function (name) {
     const datasourceList = store.state.logic.datasource
     if (datasourceList.hasOwnProperty(name)) {
-      const datasourceType = datasourceList[name].type
+      const datasourceType = datasourceList[name].datasourceType
+      datasourceList[name].loading = true
       switch (datasourceType) {
         case 'static': return this.$updateStaticDatasource(datasourceList[name])
         case 'http': return this.$updateHttpDatasource(datasourceList[name])

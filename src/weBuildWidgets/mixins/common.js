@@ -36,7 +36,7 @@ export default {
     },
     hideElement () {
       if (this.config.show !== '') {
-        return this.GetValueString(this.config.show)
+        return this.callMethod(this.config.show)
       } else {
         return true
       }
