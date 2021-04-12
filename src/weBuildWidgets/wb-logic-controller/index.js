@@ -178,7 +178,8 @@ export default {
       const datasocket = datasockets[name]
       const input = this.GetDataSourceData(datasocket.datasource)
       try {
-        const dm = new Function('data', 'me', datasocket.rule)
+        const rule = `var filterdData; ${datasocket.rule || ''} \n return filterdData`
+        const dm = new Function('data', 'me', rule)
         const result = dm(input, this)
         log.DatasocketSuccessfullyRun(name)
         return result
