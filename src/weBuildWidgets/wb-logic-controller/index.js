@@ -82,7 +82,7 @@ export default {
 
   // Data source
   $updateStaticDatasource: function (obj) {
-    const config = obj.configuration
+    const config = obj.datasourceConfig
     try {
       obj.data = config.value
       log.DatasourceUpdatedSuccessfully(obj.name, 'static', obj.data)
@@ -98,6 +98,7 @@ export default {
   },
   $updateHttpDatasource: function (obj) {
     const config = obj.datasourceConfig
+    const me = this
     var HTTP_Config = {
       url: config.url,
       method: config.method,
@@ -132,7 +133,7 @@ export default {
         log.DatasourceUpdatedSuccessfully(obj.name, 'http', obj.data)
         obj.loading = false
         const dm = new Function('data', 'me', obj.updateCallback)
-        dm(obj.data, this)
+        dm(obj.data, me)
       })
       .catch(function (error) {
         obj.data = 'No Data'
