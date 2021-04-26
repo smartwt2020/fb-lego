@@ -79,7 +79,13 @@ export default {
       log.MethodNameNotFound(name)
     }
   },
-
+  RunStringFunction: function (stringFun, data) {
+    try {
+      const dm = new Function('me', 'data', stringFun)
+      const result = dm(this, data)
+      return result
+    } catch {}
+  },
   // Data source
   $updateStaticDatasource: function (obj) {
     const config = obj.datasourceConfig
