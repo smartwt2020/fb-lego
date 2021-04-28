@@ -5,7 +5,7 @@
   "class": "container",
   "parent": null,
   "type": "container",
-  "component": "container",
+  "component": "fb-widget-container",
   "containerType": "panel",
   "show": true,
   "flexConfig": {
