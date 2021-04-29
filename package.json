@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "apexcharts": "^3.23.1",
+    "asw-form-builder": "^1.0.4",
     "asw-logger": "^1.0.5",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",

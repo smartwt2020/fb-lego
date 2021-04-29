@@ -13,6 +13,7 @@ import textarea from './widgets/textarea'
 import Switch from './widgets/switch'
 import checkbox from './widgets/checkbox'
 import select from './widgets/select'
+import form from './widgets/form'
 
 import kpiCard from './widgets/kpiCard'
 
@@ -39,6 +40,7 @@ export default {
     Vue.component('fbWidgetSwitch', Switch)
     Vue.component('fbWidgetCheckbox', checkbox)
     Vue.component('fbWidgetSelect', select)
+    Vue.component('fbWidgetForm', form)
 
     Vue.component('fbWidgetKpiCard', kpiCard)
 

@@ -200,6 +200,14 @@ export default {
   },
 
   // Form Action
+  GetFormConfig: function (name) {
+    const form = store.state.form.forms
+    if (name in form) {
+      return form[name]
+    } else {
+      return null
+    }
+  },
   FormAction: function (body, rule) {
     try {
       const dm = new Function('data', 'me', rule)
