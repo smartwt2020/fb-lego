@@ -7,7 +7,7 @@
   "type": "container",
   "component": "fb-widget-container",
   "containerType": "panel",
-  "show": true,
+  "show": "",
   "flexConfig": {
     "flexDirection": "column",
     "justifyContent": "flex-start",
