@@ -1,3 +1,5 @@
+import container from './widgets/container'
+
 import label from './widgets/label'
 import paragraph from './widgets/paragraph'
 import html from './widgets/html'
@@ -25,6 +27,8 @@ import donutChart from './widgets/donutChart'
 
 export default {
   install (Vue) {
+    Vue.component('fbWidgetContainer', container)
+
     Vue.component('fbWidgetLabel', label)
     Vue.component('fbWidgetParagraph', paragraph)
     Vue.component('fbWidgetHtml', html)
