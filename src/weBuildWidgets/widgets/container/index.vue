@@ -1,5 +1,6 @@
 <template>
   <div
+    @click.stop="$emit('click')"
     :class="getClass"
     :id="config.id"
     ref="widget"
@@ -10,7 +11,6 @@
 
 <script>
 import common from '../../mixins/common'
-import { addMarginStyle } from '../../utills/marginSpace'
 export default {
   name: 'fbWidgetContainer',
   mixins: [common],
@@ -22,7 +22,6 @@ export default {
     ComponentCss () {
       let css = ''
       const id = `#${this.config.id}`
-      this.config.style = addMarginStyle(this.config.style)
       css += this.JsonToCss(id, { ...this.config.style, ...this.config.addOnStyle }, css)
       return css
     }
