@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import logicController from '../wb-logic-controller'
-import { CreateStyle, JsonToCss } from '../utills/style'
+import { generateComponentCss } from '../wb-style-controller'
 export default {
   props: {
     config: {
@@ -62,15 +62,20 @@ export default {
     },
 
     // CSS Render section and Event management system
-    JsonToCss,
     renderStyle () {
-      if (!this.styleElement) {
-        this.elementSetup()
-      }
-      this.styleElement.innerHTML = this.ComponentCss() + ' ' + this.config.staticStyle
+      this.elementSetup()
+      this.styleElement.innerHTML = generateComponentCss(this.config)
     },
     elementSetup () {
-      this.styleElement = CreateStyle(this.config.id)
+      const id = this.config.id
+      if (!this.styleElement) {
+        this.styleElement = document.getElementById(`style-${id}`)
+        if (this.styleElement === null) {
+          this.styleElement = document.createElement('style')
+          this.styleElement.setAttribute('id', `style-${id}`)
+          document.body.append(this.styleElement)
+        }
+      }
     },
     eventSetup () {
       const element = this.$refs.widget

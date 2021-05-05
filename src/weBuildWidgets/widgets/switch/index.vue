@@ -39,10 +39,6 @@ export default {
     }
   },
   methods: {
-    ComponentCss () {
-      const css = ''
-      return css
-    },
     change () {
       this.value = !this.value
       if (this.config.bindProperty) {

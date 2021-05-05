@@ -9,23 +9,9 @@
 
 <script>
 import common from '../../mixins/common'
-import { addMarginStyle } from '../../utills/marginSpace'
 export default {
   name: 'fbWidgetHtml',
-  mixins: [common],
-  data: () => ({
-  }),
-  computed: {
-  },
-  methods: {
-    ComponentCss () {
-      let css = ''
-      const id = `#${this.config.id}`
-      this.config.style = addMarginStyle(this.config.style)
-      css += this.JsonToCss(id, { ...this.config.style, ...this.config.addOnStyle }, css)
-      return css
-    }
-  }
+  mixins: [common]
 }
 </script>
 

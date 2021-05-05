@@ -6,22 +6,12 @@
 import apexChart from '../../plugins/components/apexChart.vue'
 import common from '../../mixins/common'
 import chartMixins from '../../mixins/chartMixins'
-import { addMarginStyle } from '../../utills/marginSpace'
 import { getData } from '../../utills/chart'
 
 export default {
   name: 'fbWidgetLineChart',
   components: { apexChart },
   mixins: [common, chartMixins],
-  methods: {
-    ComponentCss () {
-      let css = ''
-      const id = `#${this.config.id}`
-      this.config.style = addMarginStyle(this.config.style)
-      css += this.JsonToCss(id, { ...this.config.style, ...this.config.addOnStyle }, css)
-      return css
-    }
-  },
   computed: {
     getConfig () {
       const _c = this.config.configuration

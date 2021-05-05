@@ -11,7 +11,6 @@
 
 <script>
 import common from '../../mixins/common'
-import { addMarginStyle } from '../../utills/marginSpace'
 
 export default {
   name: 'fbWidgetTextarea',
@@ -36,17 +35,6 @@ export default {
       if (this.config.bindProperty) {
         this.setVaiableData(this.config.bindProperty, this.bindData)
       }
-    },
-    ComponentCss () {
-      let css = ''
-      addMarginStyle(this.config.style)
-      const id = `#${this.config.id}`
-      const sudoStyle = this.config.sudoStyle || {}
-      css += this.JsonToCss(id, { ...this.config.style, ...this.config.addOnStyle }, css)
-      for (const sudoClass in sudoStyle) {
-        css += this.JsonToCss(`${id}:${sudoClass}`, sudoStyle[sudoClass], css)
-      }
-      return css
     }
   }
 }

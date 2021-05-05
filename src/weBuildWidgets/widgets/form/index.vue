@@ -18,11 +18,10 @@
 
 <script>
 import common from '../../mixins/common'
-import { addMarginStyle } from '../../utills/marginSpace'
 import AswFormBuilder from 'asw-form-builder/builder.vue'
 import formController from '../../wb-logic-controller/index.js'
 export default {
-  name: 'fbWidgetHtml',
+  name: 'fbWidgetForm',
   mixins: [common],
   components: {
     AswFormBuilder
@@ -47,13 +46,6 @@ export default {
     }
   },
   methods: {
-    ComponentCss () {
-      let css = ''
-      const id = `#${this.config.id}`
-      this.config.style = addMarginStyle(this.config.style)
-      css += this.JsonToCss(id, { ...this.config.style, ...this.config.addOnStyle }, css)
-      return css
-    },
     clickFormAction (data) {
       const form = formController.GetFormConfig(this.config.formName)
       formController.FormAction(data, form.rule)
