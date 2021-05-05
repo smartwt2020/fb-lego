@@ -63,8 +63,10 @@ export default {
 
     // CSS Render section and Event management system
     renderStyle () {
-      this.elementSetup()
-      this.styleElement.innerHTML = generateComponentCss(this.config)
+      if (window.application_mode === 'design') {
+        this.elementSetup()
+        this.styleElement.innerHTML = generateComponentCss(this.config)
+      }
     },
     elementSetup () {
       const id = this.config.id
