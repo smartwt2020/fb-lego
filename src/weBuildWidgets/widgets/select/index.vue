@@ -14,9 +14,11 @@
 
 <script>
 import common from '../../mixins/common'
+import styleMixin from '../../mixins/styleMixins.js'
+import eventMixins from '../../mixins/eventMixin.js'
 export default {
   name: 'fbWidgetSelect',
-  mixins: [common],
+  mixins: [common, styleMixin, eventMixins],
   data: () => ({
     bindData: ''
   }),

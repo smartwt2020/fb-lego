@@ -7,10 +7,12 @@ import apexChart from '../../plugins/components/apexChart.vue'
 import common from '../../mixins/common'
 import chartMixins from '../../mixins/chartMixins'
 import { getData } from '../../utills/chart'
+import styleMixin from '../../mixins/styleMixins.js'
+import eventMixins from '../../mixins/eventMixin.js'
 export default {
   name: 'fbWidgetAreaChart',
   components: { apexChart },
-  mixins: [common, chartMixins],
+  mixins: [common, chartMixins, styleMixin, eventMixins],
   computed: {
     getConfig () {
       const _c = this.config.configuration

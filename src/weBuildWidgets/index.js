@@ -25,6 +25,8 @@ import barChart from './widgets/barChart'
 import pieChart from './widgets/pieChart'
 import donutChart from './widgets/donutChart'
 
+import collabWidget from './widgets/collabWidget'
+
 export default {
   install (Vue) {
     Vue.component('fbWidgetContainer', container)
@@ -53,5 +55,7 @@ export default {
     Vue.component('fbWidgetBarChart', barChart)
     Vue.component('fbWidgetPieChart', pieChart)
     Vue.component('fbWidgetDonutChart', donutChart)
+
+    Vue.component('fbWidgetCollabWidget', collabWidget)
   }
 }

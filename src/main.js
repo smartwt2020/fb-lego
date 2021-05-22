@@ -5,7 +5,7 @@ import store from './store'
 import wbWidget from './weBuildWidgets/index'
 import './jsonImport'
 Vue.use(wbWidget)
-
+window.application_mode = 'design'
 Vue.config.productionTip = false
 
 new Vue({

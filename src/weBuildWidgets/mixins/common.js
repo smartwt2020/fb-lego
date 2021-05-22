@@ -1,6 +1,4 @@
-import Vue from 'vue'
 import logicController from '../wb-logic-controller'
-import { generateComponentCss } from '../wb-style-controller'
 export default {
   props: {
     config: {
@@ -8,23 +6,22 @@ export default {
     }
   },
   data: () => ({
-    styleElement: null,
-    eventMap: {}
+    styleElement: null
   }),
   watch: {
-    config: {
-      deep: true,
-      handler () {
-        this.renderStyle()
-      }
-    },
-    getEvents: {
-      deep: true,
-      handler () {
-        this.removeAllEvent()
-        this.eventSetup()
-      }
-    }
+    // config: {
+    //   deep: true,
+    //   handler () {
+    //     this.renderStyle()
+    //   }
+    // },
+    // getEvents: {
+    //   deep: true,
+    //   handler () {
+    //     this.removeAllEvent()
+    //     this.eventSetup()
+    //   }
+    // }
   },
 
   computed: {
@@ -59,56 +56,47 @@ export default {
     },
     callMethod (name, data = null) {
       return logicController.RunMethod(name, data)
-    },
-
-    // CSS Render section and Event management system
-    renderStyle () {
-      if (window.application_mode === 'design') {
-        this.elementSetup()
-        this.styleElement.innerHTML = generateComponentCss(this.config)
-      }
-    },
-    elementSetup () {
-      const id = this.config.id
-      if (!this.styleElement) {
-        this.styleElement = document.getElementById(`style-${id}`)
-        if (this.styleElement === null) {
-          this.styleElement = document.createElement('style')
-          this.styleElement.setAttribute('id', `style-${id}`)
-          document.body.append(this.styleElement)
-        }
-      }
-    },
-    eventSetup () {
-      const element = this.$refs.widget
-      if (element && this.config.events) {
-        for (const event in this.config.events) {
-          if (!(event in this.eventMap)) {
-            Vue.set(this.eventMap, event, () => {
-              logicController.RunMethod(this.config.events[event])
-            })
-            element.addEventListener(event, this.eventMap[event])
-          }
-        }
-      }
-    },
-    removeAllEvent () {
-      const element = this.$refs.widget
-      if (element) {
-        for (const event in this.eventMap) {
-          element.removeEventListener(event, this.eventMap[event])
-          Vue.delete(this.eventMap, event)
-        }
-      }
     }
-  },
-  mounted () {
-    this.elementSetup()
-    this.renderStyle()
-    this.removeAllEvent()
-    this.eventSetup()
-  },
-  beforeDestroy () {
-    this.removeAllEvent()
+
+    // // CSS Render section and Event management system
+    // renderStyle () {
+    //   if (window.application_mode === 'design') {
+    //     this.elementSetup()
+    //     this.styleElement.innerHTML = generateComponentCss(this.config)
+    //   }
+    // },
+    // elementSetup () {
+    //   const id = this.config.id
+    //   if (!this.styleElement) {
+    //     this.styleElement = document.getElementById(`style-${id}`)
+    //     if (this.styleElement === null) {
+    //       this.styleElement = document.createElement('style')
+    //       this.styleElement.setAttribute('id', `style-${id}`)
+    //       document.body.append(this.styleElement)
+    //     }
+    //   }
+    // },
+    // eventSetup () {
+    //   const element = this.$refs.widget
+    //   if (element && this.config.events) {
+    //     for (const event in this.config.events) {
+    //       if (!(event in this.eventMap)) {
+    //         Vue.set(this.eventMap, event, () => {
+    //           logicController.RunMethod(this.config.events[event])
+    //         })
+    //         element.addEventListener(event, this.eventMap[event])
+    //       }
+    //     }
+    //   }
+    // },
+    // removeAllEvent () {
+    //   const element = this.$refs.widget
+    //   if (element) {
+    //     for (const event in this.eventMap) {
+    //       element.removeEventListener(event, this.eventMap[event])
+    //       Vue.delete(this.eventMap, event)
+    //     }
+    //   }
+    // }
   }
 }

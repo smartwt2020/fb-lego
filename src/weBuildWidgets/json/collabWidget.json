@@ -1,0 +1,84 @@
+{
+  "id": "collab-widget-ASDFGHJKKL",
+  "class": "collab-widget-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-collab-widget",
+  "parent": "",
+  "type": "content",
+  "show": "",
+  "elements": {
+    "randomID": {
+      "id": "label-ASDFGHJKKL",
+      "class": "label-ASDFGHJKKL",
+      "name": "",
+      "discription": "",
+      "component": "fb-widget-label",
+      "parent": "",
+      "type": "content",
+      "value": "label",
+      "show": "",
+      "style": {
+        "fontFamily": "",
+        "fontSize": "16px",
+        "fontWeight": "normal",
+        "textAlign": "left",
+        "color": "#000000",
+        "background": "transparent",
+        "textDecoration": "none",
+        "fontStyle": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "borderWidth": "0px",
+        "borderRadius": "0px",
+        "borderStyle": "unset",
+        "borderColor": "#000000",
+        "textShadow": "0px 0px 0px #000000",
+        "boxShadow": "0px 0px 0px 0px #000000",
+        "cursor": "pointer"
+      },
+      "events": {
+        "click": ""
+      },
+      "sudoStyle": {
+        "hover": {}
+      },
+      "addOnStyle": {},
+      "staticStyle": ""
+    }
+  },
+  "grid": [
+    {
+      "style": {
+        "display": "flex",
+        "justifyContent": "flex-start",
+        "alignItem": "flex-start",
+        "flexWrap": "wrap",
+        "height": "100%",
+        "width": "100%"
+      },
+      "columns": [
+        {
+          "style": {
+            "height": "100%",
+            "width": "100%"
+          },
+          "element": "randomID"
+        }
+      ]
+    }
+  ],
+  "style": {
+    "padding": "0px",
+    "margin": "0px",
+    "borderWidth": "0px",
+    "borderStyle": "unset",
+    "borderColor": "#000000",
+    "borderRadius": "0px",
+    "boxShadow": "0px 0px 0px 0px #000000"
+  },
+  "events": {},
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}
