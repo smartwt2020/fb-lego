@@ -29,6 +29,16 @@ const kpiCardCssConverter = (element) => {
   return css
 }
 
+const dataTableCssConverter = (element) => {
+  let css = ''
+  const id = `#${element.id}`
+  element.style.table = addMarginStyle(element.style.table)
+  css = JsonToCss(id, element.style.table, css)
+  css = JsonToCss(`${id} td`, element.style.td, css)
+  css = JsonToCss(`${id} th`, element.style.th, css)
+  return css
+}
+
 export const generateComponentCss = (element) => {
   const component = element.component
   let css = ''
@@ -61,6 +71,8 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-kpi-card':
       css = kpiCardCssConverter(element)
       break
+    case 'fb-widget-data-table':
+      css = dataTableCssConverter(element)
   }
   return css + element.staticStyle
 }

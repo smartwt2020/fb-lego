@@ -19,6 +19,8 @@ import form from './widgets/form'
 
 import kpiCard from './widgets/kpiCard'
 
+import dataTable from './widgets/dataTable'
+
 import lineChart from './widgets/lineChart'
 import areaChart from './widgets/areaChart'
 import barChart from './widgets/barChart'
@@ -49,6 +51,8 @@ export default {
     Vue.component('fbWidgetForm', form)
 
     Vue.component('fbWidgetKpiCard', kpiCard)
+
+    Vue.component('fbWidgetDataTable', dataTable)
 
     Vue.component('fbWidgetLineChart', lineChart)
     Vue.component('fbWidgetAreaChart', areaChart)

@@ -1,0 +1,57 @@
+{
+  "id": "data-table-ASDFGHJKKL",
+  "class": "data-table-ASDFGHJKKL",
+  "name": "",
+  "discription": "",
+  "component": "fb-widget-data-table",
+  "parent": "",
+  "type": "content",
+  "show": "",
+  "datasocket": "",
+  "noDataText": "No Data found",
+  "header": [],
+  "style": {
+    "table": {
+      "fontFamily": "",
+      "background": "transparent",
+      "padding": "2px",
+      "margin": "0px",
+      "borderWidth": "0px",
+      "borderStyle": "solid",
+      "borderColor": "#000000",
+      "borderRadius": "5px",
+      "textShadow": "0px 0px 0px #000000",
+      "boxShadow": "0px 0px 0px 0px #000000",
+      "cursor": "pointer",
+      "width": "100%"
+    },
+    "th": {
+      "fontSize": "16px",
+      "fontWeight": "normal",
+      "textAlign": "left",
+      "color": "#000000",
+      "background": "transparent",
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "margin": "0px",
+      "padding": "0px"
+    },
+    "td": {
+      "fontSize": "16px",
+      "fontWeight": "normal",
+      "textAlign": "left",
+      "color": "#000000",
+      "background": "transparent",
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "margin": "0px",
+      "padding": "0px"
+    }
+  },
+  "events": {
+    "click": ""
+  },
+  "sudoStyle": {},
+  "addOnStyle": {},
+  "staticStyle": ""
+}

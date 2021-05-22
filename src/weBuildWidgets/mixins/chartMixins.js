@@ -4,7 +4,8 @@ export default {
   computed: {
     getDatasocketData () {
       if (this.config.datasocket) {
-        return logicController.GetDataSocketData(this.config.datasocket) || []
+        const datasocketData = logicController.GetDataSocketData(this.config.datasocket) || []
+        return Array.isArray(datasocketData) ? datasocketData : []
       } else {
         return []
       }
