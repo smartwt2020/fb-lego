@@ -21,10 +21,9 @@ import common from '../../mixins/common'
 import AswFormBuilder from 'asw-form-builder/builder.vue'
 import formController from '../../wb-logic-controller/index.js'
 import styleMixin from '../../mixins/styleMixins.js'
-import eventMixins from '../../mixins/eventMixin.js'
 export default {
   name: 'fbWidgetForm',
-  mixins: [common, styleMixin, eventMixins],
+  mixins: [common, styleMixin],
   components: {
     AswFormBuilder
   },

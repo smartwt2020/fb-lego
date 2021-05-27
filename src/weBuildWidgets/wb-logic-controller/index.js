@@ -219,6 +219,15 @@ export default {
     }
   },
 
+  GetCollabWidgetConfig: function (name) {
+    const form = store.state.collabWidget.collabWidgets
+    if (name in form) {
+      return form[name]
+    } else {
+      return null
+    }
+  },
+
   // Api
   Api: function (config) {
     return Promise((reslove, reject) => {

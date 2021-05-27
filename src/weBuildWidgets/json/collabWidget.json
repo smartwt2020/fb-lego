@@ -7,33 +7,7 @@
   "parent": "",
   "type": "content",
   "show": "",
-  "widgetPropertyMap": {
-    "property": {},
-    "datasocket": {},
-    "events": {}
-  },
-  "elements": {},
-  "grid": [
-    {
-      "style": {
-        "display": "flex",
-        "justifyContent": "flex-start",
-        "alignItem": "flex-start",
-        "flexWrap": "wrap",
-        "height": "100%",
-        "width": "100%"
-      },
-      "columns": [
-        {
-          "style": {
-            "height": "100%",
-            "width": "100%"
-          },
-          "element": null
-        }
-      ]
-    }
-  ],
+  "collabWidgetName": "",
   "style": {
     "padding": "0px",
     "margin": "0px",
