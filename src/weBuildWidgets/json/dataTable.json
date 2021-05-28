@@ -26,26 +26,30 @@
       "width": "100%"
     },
     "th": {
-      "fontSize": "16px",
+      "fontSize": "14px",
       "fontWeight": "normal",
       "textAlign": "left",
-      "color": "#000000",
-      "background": "transparent",
+      "color": "#6f6f6f",
+      "background": "#e8e8e8",
       "textDecoration": "none",
       "fontStyle": "normal",
-      "margin": "0px",
-      "padding": "0px"
+      "padding": "5px 0px 5px 10px",
+      "borderWidth": "0px 0px 1px 0px",
+      "borderStyle": "solid",
+      "borderColor": "#b9b9b9"
     },
     "td": {
-      "fontSize": "16px",
+      "fontSize": "12px",
       "fontWeight": "normal",
       "textAlign": "left",
-      "color": "#000000",
-      "background": "transparent",
+      "color": "#818181",
+      "background": "#fafafa",
       "textDecoration": "none",
       "fontStyle": "normal",
-      "margin": "0px",
-      "padding": "0px"
+      "padding": "10px",
+      "borderWidth": "0px 0px 1px 0px",
+      "borderStyle": "solid",
+      "borderColor": "#b9b9b9"
     }
   },
   "events": {

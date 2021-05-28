@@ -44,6 +44,7 @@ export default {
   overflow: auto;
   table {
     width: 100%;
+    border-collapse: collapse;
   }
 }
 </style>
