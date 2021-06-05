@@ -26,11 +26,53 @@ export default new Vuex.Store({
             name: 'tempCollabWidget',
             direction: 'just for test',
             widgetPropertyMap: {
-              property: {},
+              body: {},
+              property: {
+                property: ''
+              },
               datasocket: {},
               events: {}
             },
-            elements: {},
+            elements: {
+              label: {
+                id: 'label-ASDFGHJKKL',
+                class: 'label-ASDFGHJKKL',
+                name: '',
+                discription: '',
+                component: 'fb-widget-label',
+                parent: '',
+                type: 'content',
+                value: '{{property}}',
+                show: '',
+                style: {
+                  fontFamily: '',
+                  fontSize: '16px',
+                  fontWeight: 'normal',
+                  textAlign: 'left',
+                  color: '#000000',
+                  background: 'transparent',
+                  textDecoration: 'none',
+                  fontStyle: 'normal',
+                  padding: '0px',
+                  margin: '0px',
+                  borderWidth: '0px',
+                  borderRadius: '0px',
+                  borderStyle: 'unset',
+                  borderColor: '#000000',
+                  textShadow: '0px 0px 0px #000000',
+                  boxShadow: '0px 0px 0px 0px #000000',
+                  cursor: 'pointer'
+                },
+                events: {
+                  click: ''
+                },
+                sudoStyle: {
+                  hover: {}
+                },
+                addOnStyle: {},
+                staticStyle: ''
+              }
+            },
             grid: [
               {
                 style: {
@@ -47,7 +89,7 @@ export default new Vuex.Store({
                       height: '100%',
                       width: '100%'
                     },
-                    element: null
+                    element: 'label'
                   }
                 ]
               }

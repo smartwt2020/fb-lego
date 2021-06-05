@@ -1,7 +1,7 @@
 import { camelCase } from 'lodash'
 
 const componentPropertyMap = {
-  valueString: {
+  body: {
     fbWidgetLabel: ['value'],
     fbWidgetButton: ['value'],
     fbWidgetIcon: ['value'],
@@ -46,8 +46,9 @@ const setProperty = function (obj, query, value) {
   query.split('.').reduce((o, p, i) => { o[p] = query.split('.').length === ++i ? value : o[p] || {} }, obj)
 }
 
-const valueStringBinding = function (config, propMap, comp) {
-  const props = componentPropertyMap.valueString[comp] || []
+const bodyBinding = function (config, propMap, comp) {
+  const props = componentPropertyMap.body[comp] || []
+  const body = propMap.body || {}
   props.forEach(e => {
     let str = getProperty(config, e)
     const itr = str.matchAll('{{.*?}}')
@@ -55,7 +56,7 @@ const valueStringBinding = function (config, propMap, comp) {
     while (!result.done) {
       // get the regex match
       const key = result.value[0]
-      const value = propMap.property[key.slice(2, -2).trim()]
+      const value = body[key.slice(2, -2).trim()]
       str = str.replace(key, value)
       result = itr.next()
     }
@@ -67,30 +68,33 @@ const valueStringBinding = function (config, propMap, comp) {
 
 const propertyBinding = function (config, propMap, comp) {
   const props = componentPropertyMap.property[comp] || []
+  const property = propMap.property || []
   props.forEach(e => {
-    setProperty(config, e, propMap.property[getProperty(config, e)] || '')
+    setProperty(config, e, property[getProperty(config, e)] || '')
   })
   return config
 }
 
 const datasocketBinding = function (config, propMap, comp) {
   const props = componentPropertyMap.datasocket[comp] || []
+  const datasocket = propMap.datasocket || []
   props.forEach(e => {
-    setProperty(config, e, propMap.datasocket[getProperty(config, e)] || '')
+    setProperty(config, e, datasocket[getProperty(config, e)] || '')
   })
   return config
 }
 
 const eventBinding = function (config, propMap) {
+  const events = propMap.events || {}
   for (const event in config.events) {
-    config.events[event] = propMap.events[config.events[event]]
+    config.events[event] = events[config.events[event]]
   }
   return config
 }
 
 const collabBinding = function (config, propMap) {
   const componentName = camelCase(config.component)
-  return valueStringBinding(
+  return bodyBinding(
     propertyBinding(
       datasocketBinding(
         eventBinding(config, propMap),

@@ -21,7 +21,8 @@
         <button @click="opentab = 'method'" :class="opentab === 'method' ? 'active': ''">Method</button>
         <button @click="opentab = 'datasource'" :class="opentab === 'datasource' ? 'active': ''">Datasource</button>
         <button @click="opentab = 'datasocket'" :class="opentab === 'datasocket' ? 'active': ''">Datasocket</button>
-         <button @click="opentab = 'log'" :class="opentab === 'log' ? 'active': ''">Log</button>
+        <button @click="opentab = 'collabWidget'" :class="opentab === 'collabWidget' ? 'active': ''">Collab Widget</button>
+        <button @click="opentab = 'log'" :class="opentab === 'log' ? 'active': ''">Log</button>
       </div>
       <div class="ele-container">
         <vue-json-editor v-if="opentab === 'config'" :mode="'code'" v-model="ConfigData" :show-btns="false" :expandedOnStart="true"></vue-json-editor>
@@ -59,6 +60,7 @@ export default {
           case 'method': return this.$store.state.logic.method
           case 'datasource': return this.$store.state.logic.datasource
           case 'datasocket': return this.$store.state.logic.datasocket
+          case 'collabWidget': return this.$store.state.collabWidget.collabWidgets
           case 'log': return ''
           default: return {}
         }
@@ -69,6 +71,7 @@ export default {
           case 'method': this.$store.state.logic.method = val; break
           case 'datasource': this.$store.state.logic.datasource = val; break
           case 'datasocket': this.$store.state.logic.datasocket = val; break
+          case 'collabWidget': this.$store.state.collabWidget.collabWidgets = val; break
           default: return {}
         }
       }

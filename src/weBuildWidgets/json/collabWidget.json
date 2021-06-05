@@ -8,7 +8,14 @@
   "type": "content",
   "show": "",
   "collabWidgetName": "",
+  "widgetPropertyMap": {
+    "body": {},
+    "property": {},
+    "datasocket": {},
+    "events": {}
+  },
   "style": {
+    "background": "#ffffff",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",
