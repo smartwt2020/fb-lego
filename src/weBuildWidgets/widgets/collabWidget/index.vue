@@ -44,24 +44,6 @@ export default {
       const widgetPropertyMap = this.config.widgetPropertyMap || {}
       const cloneConfig = cloneDeep(config)
       return collabBinding(cloneConfig, widgetPropertyMap)
-    },
-    setWidgetPropertyMap () {
-      const widgetPropertyMap = this.getCollabConfig.widgetPropertyMap || {}
-      Object.keys(widgetPropertyMap).forEach(property => {
-        Object.keys(widgetPropertyMap[property]).forEach(key => {
-          if (!(key in this.config.widgetPropertyMap[property])) {
-            this.$set(this.config.widgetPropertyMap[property], key, '')
-          }
-        })
-      })
-    }
-  },
-  watch: {
-    getCollabConfig: {
-      deep: true,
-      handler () {
-        this.setWidgetPropertyMap()
-      }
     }
   },
   computed: {
