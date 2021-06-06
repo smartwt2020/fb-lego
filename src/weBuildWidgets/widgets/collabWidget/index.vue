@@ -6,7 +6,7 @@
     :id="config.id"
     ref="widget">
     <div v-if="!collabBinded" class="invalid-collab-text">
-      No Form Is Binded
+      No Collab Widget Is Binded
     </div>
     <div  v-else-if="!getCollabConfig" class="invalid-collab-text">
       Collab widget {{config.collabWidgetName}} is invalid Collab.
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     collabBinded () {
-      return this.config.formName !== ''
+      return this.config.collabWidgetName !== ''
     },
     getCollabConfig () {
       if (this.collabBinded) {
