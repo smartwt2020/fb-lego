@@ -1,7 +1,6 @@
 <template>
   <div
     class="collab-widget-container"
-    @click.stop="$emit('click')"
     :class="getClass"
     :id="config.id"
     ref="widget">
@@ -67,7 +66,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .collab-widget-container {
-  overflow: auto;
 }
 .invalid-collab-text {
   height: 100%;
