@@ -15,7 +15,7 @@
     "height": "100%",
     "width": "100%",
     "background": "#ffffff",
-    "display": "block",
+    "display": "flex",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",
