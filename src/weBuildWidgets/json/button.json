@@ -25,7 +25,8 @@
     "borderColor": "#777777",
     "textShadow": "0px 0px 0px #000000",
     "boxShadow": "0px 0px 0px 0px #000000",
-    "cursor": "pointer"
+    "cursor": "pointer",
+    "overflow": "auto"
   },
   "events": {
     "click": ""

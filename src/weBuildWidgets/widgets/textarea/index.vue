@@ -5,7 +5,7 @@
     ref="widget"
     v-if="hideElement"
     v-model="bindData"
-    @keypress="upadateBindData"
+    @keydown="upadateBindData"
     />
 </template>
 

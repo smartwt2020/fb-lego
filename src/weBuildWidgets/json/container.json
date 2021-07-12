@@ -22,7 +22,8 @@
     "borderStyle": "unset",
     "borderColor": "#000000",
     "borderRadius": "0px",
-    "boxShadow": "0px 0px 0px 0px #000000"
+    "boxShadow": "0px 0px 0px 0px #000000",
+    "overflow": "auto"
   },
   "events": {},
   "sudoStyle": {},

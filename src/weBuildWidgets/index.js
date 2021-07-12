@@ -28,6 +28,7 @@ import pieChart from './widgets/pieChart'
 import donutChart from './widgets/donutChart'
 
 import collabWidget from './widgets/collabWidget'
+import modal from './widgets/modal'
 
 export default {
   install (Vue) {
@@ -61,5 +62,6 @@ export default {
     Vue.component('fbWidgetDonutChart', donutChart)
 
     Vue.component('fbWidgetCollabWidget', collabWidget)
+    Vue.component('fbWidgetModal', modal)
   }
 }

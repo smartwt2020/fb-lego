@@ -18,10 +18,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  max-width: calc(100% - 30px);
-  width: auto;
-  display: block;
-  margin: 0px auto;
-}
 </style>

@@ -54,9 +54,6 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-pie-chart':
     case 'fb-widget-textarea':
     case 'fb-widget-collab-widget':
-      element.style = addMarginStyle(element.style)
-      css = generalCssConverter(element)
-      break
     case 'fb-widget-label':
     case 'fb-widget-button':
     case 'fb-widget-checkbox':
@@ -66,6 +63,8 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-link':
     case 'fb-widget-select':
     case 'fb-widget-switch':
+    case 'fb-widget-modal':
+      element.style = addMarginStyle(element.style)
       css = generalCssConverter(element)
       break
     case 'fb-widget-kpi-card':

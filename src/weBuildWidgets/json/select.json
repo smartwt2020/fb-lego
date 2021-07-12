@@ -24,11 +24,12 @@
     "margin": "0px",
     "borderWidth": "1px 1px 1px 1px",
     "borderStyle": "solid",
-    "borderColor": "##9a9393",
+    "borderColor": "#9a9393",
     "borderRadius": "5px",
     "textShadow": "0px 0px 0px #000000",
     "boxShadow": "0px 0px 0px 0px #000000",
-    "cursor": "text"
+    "cursor": "text",
+    "overflow": "auto"
   },
   "events": {},
   "sudoStyle": {

@@ -106,27 +106,27 @@ export default {
     const config = obj.datasourceConfig
     const me = this
     var HTTP_Config = {
-      url: config.url,
+      url: this.GetValueString(config.url),
       method: config.method,
-      baseURL: config.baseURL,
-      headers: config.headers,
-      params: config.params,
-      data: config.data,
+      baseURL: this.GetValueString(config.baseURL),
+      headers: this.GetPropertyValue(config.headers),
+      params: this.GetPropertyValue(config.params),
+      data: this.GetPropertyValue(config.data),
       timeout: config.timeout,
       withCredentials: config.withCredentials,
       auth: {
-        username: config.authUsername,
-        password: config.authPassword
+        username: this.GetValueString(config.authUsername),
+        password: this.GetValueString(config.authPassword)
       },
       validateStatus: function (status) {
         return status >= 200 && status < 300 // default
       },
       proxy: {
-        host: config.proxyHost,
-        port: config.proxyPort,
+        host: this.GetValueString(config.proxyHost),
+        port: this.GetValueString(config.proxyPort),
         auth: {
-          username: config.proxyAuthUsername,
-          password: config.proxyAuthPassword
+          username: this.GetValueString(config.proxyAuthUsername),
+          password: this.GetValueString(config.proxyAuthPassword)
         }
       }
     }
@@ -147,6 +147,8 @@ export default {
         obj.errorMessage = error
         log.DatasourceUpdateFail(obj.name, 'http', obj.error)
         obj.loading = false
+        const dm = new Function('data', 'me', obj.errorCallback)
+        dm(obj, me)
       })
   },
   GetDataSourceData: function (name) {
@@ -184,7 +186,7 @@ export default {
       const datasocket = datasockets[name]
       const input = this.GetDataSourceData(datasocket.datasource)
       try {
-        const rule = `var filterdData; ${datasocket.rule || ''} \n return filterdData`
+        const rule = `var filteredData; ${datasocket.rule || ''} \n return filteredData`
         const dm = new Function('data', 'me', rule)
         const result = dm(input, this)
         log.DatasocketSuccessfullyRun(name)

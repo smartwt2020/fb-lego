@@ -13,7 +13,7 @@
     "margin": "0px",
     "borderWidth": "1px 1px 1px 1px",
     "borderStyle": "solid",
-    "borderColor": "##9a9393",
+    "borderColor": "#9a9393",
     "boxShadow": "0px 0px 0px 0px #000000"
   },
   "events": {},

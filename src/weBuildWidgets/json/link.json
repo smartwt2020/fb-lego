@@ -27,7 +27,8 @@
     "textShadow": "0px 0px 0px #000000",
     "boxShadow": "0px 0px 0px 0px #000000",
     "cursor": "pointer",
-    "fontFamily": ""
+    "fontFamily": "",
+    "overflow": "auto"
   },
   "sudoStyle": {
     "hover": {}

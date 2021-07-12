@@ -1,5 +1,10 @@
 <template>
-  <apex-chart :data="getData" :configuration="getConfig"/>
+  <apex-chart
+    :class="getClass"
+    :id="config.id"
+    ref="widget"
+    :data="getData"
+    :configuration="getConfig"/>
 </template>
 
 <script>

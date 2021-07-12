@@ -23,7 +23,8 @@
       "textShadow": "0px 0px 0px #000000",
       "boxShadow": "0px 0px 0px 0px #000000",
       "cursor": "pointer",
-      "width": "100%"
+      "width": "100%",
+      "overflow": "auto"
     },
     "th": {
       "fontSize": "14px",
