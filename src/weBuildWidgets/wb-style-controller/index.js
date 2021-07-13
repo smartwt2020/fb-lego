@@ -57,7 +57,6 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-label':
     case 'fb-widget-button':
     case 'fb-widget-checkbox':
-    case 'fb-widget-container':
     case 'fb-widget-icon':
     case 'fb-widget-input':
     case 'fb-widget-link':
@@ -65,6 +64,9 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-switch':
     case 'fb-widget-modal':
       element.style = addMarginStyle(element.style)
+      css = generalCssConverter(element)
+      break
+    case 'fb-widget-container':
       css = generalCssConverter(element)
       break
     case 'fb-widget-kpi-card':
