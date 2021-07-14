@@ -5,7 +5,7 @@
   "discription": "",
   "component": "fb-widget-collab-widget",
   "parent": "",
-  "type": "content",
+  "type": "grid",
   "show": "",
   "collabWidgetName": "",
   "widgetPropertyMap": {

@@ -1,3 +1,4 @@
+import './style/index.scss'
 import container from './widgets/container'
 
 import label from './widgets/label'
@@ -29,6 +30,7 @@ import donutChart from './widgets/donutChart'
 
 import collabWidget from './widgets/collabWidget'
 import modal from './widgets/modal'
+import iterator from './widgets/iterator'
 
 export default {
   install (Vue) {
@@ -63,5 +65,6 @@ export default {
 
     Vue.component('fbWidgetCollabWidget', collabWidget)
     Vue.component('fbWidgetModal', modal)
+    Vue.component('fbWidgetIterator', iterator)
   }
 }

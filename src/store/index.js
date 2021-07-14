@@ -26,9 +26,10 @@ export default new Vuex.Store({
             name: 'tempCollabWidget',
             direction: 'just for test',
             widgetPropertyMap: {
-              body: {},
-              property: {
+              body: {
                 property: ''
+              },
+              property: {
               },
               datasocket: {},
               events: {}

@@ -13,8 +13,12 @@ export default {
     // CSS Render section and Event management system
     renderStyle () {
       if (window.application_mode === 'design') {
-        this.elementSetup()
-        this.styleElement.innerHTML = generateComponentCss(this.config)
+        if (this.config.component === 'fb-widget-collab-widget' && this.isDaynamic) {
+          return ''
+        } else {
+          this.elementSetup()
+          this.styleElement.innerHTML = generateComponentCss(this.config)
+        }
       }
     },
     elementSetup () {

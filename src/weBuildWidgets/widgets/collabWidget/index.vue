@@ -32,10 +32,6 @@ export default {
     isDaynamic: {
       type: Boolean,
       default: false
-    },
-    widgetPropertyMap: {
-      type: Object,
-      default: () => ({})
     }
   },
   methods: {

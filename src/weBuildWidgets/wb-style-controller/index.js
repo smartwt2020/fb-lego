@@ -39,6 +39,17 @@ const dataTableCssConverter = (element) => {
   return css
 }
 
+const iteratorCssConverter = (element) => {
+  let css = ''
+  const id = `#${element.id}`
+  const iteratorContainer = `#${element.id} .iterator-widget__container`
+  const childClass = `.${element.id}-collab`
+  css = JsonToCss(id, element.style, css)
+  css = JsonToCss(iteratorContainer, element.flexConfig, css)
+  css = JsonToCss(childClass, element.childrenStyle, css)
+  return css
+}
+
 export const generateComponentCss = (element) => {
   const component = element.component
   let css = ''
@@ -74,6 +85,10 @@ export const generateComponentCss = (element) => {
       break
     case 'fb-widget-data-table':
       css = dataTableCssConverter(element)
+      break
+    case 'fb-widget-iterator':
+      css = iteratorCssConverter(element)
+      break
   }
   return css + element.staticStyle
 }

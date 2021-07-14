@@ -43,5 +43,14 @@ export default {
     created: '2020-06-10T05:15:19.762Z',
     lastUpdated: '2020-06-10T05:15:19.762Z',
     selected: false
+  },
+  iteratorWidget: {
+    name: 'statusRingDatasocket',
+    about: '',
+    datasource: 'static',
+    rule: 'return [{body: {property:"widget-1"}}, {body: {property:"widget-2"}}, {body: {property:"widget-3"}}, {body: {property:"widget-4"}}]',
+    created: '2020-06-10T05:15:19.762Z',
+    lastUpdated: '2020-06-10T05:15:19.762Z',
+    selected: false
   }
 }

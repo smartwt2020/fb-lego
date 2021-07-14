@@ -9,6 +9,7 @@ import axios from 'axios'
 import log from './logMsg'
 export default {
 
+  isDesign: window.application_mode === 'design',
   // property logic
   GetPropertyValue: function (name) {
     const property = store.state.logic.property
@@ -299,5 +300,37 @@ export default {
   },
   Logger (logdata) {
     log.AddUserLog(logdata)
+  },
+  Router () {
+    return {
+      getQuery (defQuery) {
+        if (window.application_mode === 'design') {
+          return defQuery
+        } else {
+          const search = location.search.substring(1)
+          // form query string to query object
+          const query = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g, '":"') + '"}',
+            function (key, value) { return key === '' ? value : decodeURIComponent(value) })
+          return query || defQuery
+        }
+      },
+      getPath (defPath) {
+        if (window.application_mode === 'design') {
+          return defPath
+        } else {
+          return location.pathname || defPath
+        }
+      },
+      GoToPage (page) {
+        if (window.application_mode === 'design') {
+          const AllPages = store.getters.getAllPages
+          if (AllPages.indexOf(page) === -1) {
+          // logger.$errorLog(`page ${page} does not exist`)
+          } else {
+            store.state.logic.CurrentPage = page
+          }
+        }
+      }
+    }
   }
 }
