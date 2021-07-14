@@ -37,19 +37,16 @@ export default new Vuex.Store({
             },
             elements: {
               label: {
-                id: 'data-table-ASDFGHJKKL',
-                class: 'data-table-ASDFGHJKKL',
+                id: 'kpicard-ASDFGHJKKL',
+                class: 'kpicard-ASDFGHJKKL',
                 name: '',
                 discription: '',
-                component: 'fb-widget-data-table',
+                component: 'fb-widget-kpi-card',
                 parent: '',
-                type: 'content',
+                type: 'card',
                 show: '',
-                datasocket: 'datasocket',
-                noDataText: 'No Data found',
-                header: [],
-                style: {
-                  table: {
+                card: {
+                  style: {
                     fontFamily: '',
                     background: 'transparent',
                     padding: '2px',
@@ -58,45 +55,71 @@ export default new Vuex.Store({
                     borderStyle: 'solid',
                     borderColor: '#000000',
                     borderRadius: '5px',
-                    textShadow: '0px 0px 0px #000000',
                     boxShadow: '0px 0px 0px 0px #000000',
                     cursor: 'pointer',
                     width: 'calc(100% - 0px - 0px )',
-                    overflow: 'auto',
-                    height: 'calc(100% - 0px - 0px )'
-                  },
-                  th: {
-                    fontSize: '14px',
-                    fontWeight: 'normal',
-                    textAlign: 'left',
-                    color: '#6f6f6f',
-                    background: '#e8e8e8',
-                    textDecoration: 'none',
-                    fontStyle: 'normal',
-                    padding: '5px 0px 5px 10px',
-                    borderWidth: '0px 0px 1px 0px',
-                    borderStyle: 'solid',
-                    borderColor: '#b9b9b9'
-                  },
-                  td: {
-                    fontSize: '12px',
-                    fontWeight: 'normal',
-                    textAlign: 'left',
-                    color: '#818181',
-                    background: '#fafafa',
-                    textDecoration: 'none',
-                    fontStyle: 'normal',
-                    padding: '10px',
-                    borderWidth: '0px 0px 1px 0px',
-                    borderStyle: 'solid',
-                    borderColor: '#b9b9b9'
+                    height: 'calc(100% - 0px - 0px )',
+                    overflow: 'auto'
                   }
                 },
-                events: {
-                  click: ''
+                title: {
+                  value: 'Title',
+                  style: {
+                    fontSize: '16px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#000000',
+                    background: 'transparent',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    padding: '0px',
+                    margin: '0px'
+                  }
                 },
+                subtitle: {
+                  value: 'Subtitle',
+                  style: {
+                    fontSize: '16px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#000000',
+                    background: 'transparent',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    margin: '0px',
+                    padding: '0px'
+                  }
+                },
+                value: {
+                  value: 'Value',
+                  style: {
+                    fontSize: '16px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#000000',
+                    background: 'transparent',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    margin: '0px',
+                    padding: '0px'
+                  }
+                },
+                footer: {
+                  value: 'Footer',
+                  style: {
+                    fontSize: '16px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#000000',
+                    background: 'transparent',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    margin: '0px',
+                    padding: '0px'
+                  }
+                },
+                events: {},
                 sudoStyle: {},
-                addOnStyle: {},
                 staticStyle: ''
               }
             },

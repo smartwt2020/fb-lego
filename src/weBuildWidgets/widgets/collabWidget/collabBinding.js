@@ -6,7 +6,7 @@ const componentPropertyMap = {
     fbWidgetButton: ['value'],
     fbWidgetIcon: ['value'],
     fbWidgetImage: ['src'],
-    fbWidgetKpiCard: ['title.value', 'subtitle.value', 'value.value', 'header.value'],
+    fbWidgetKpiCard: ['title.value', 'subtitle.value', 'value.value', 'footer.value'],
     fbWidgetLink: ['value']
   },
   property: {
@@ -44,9 +44,10 @@ const componentPropertyMap = {
 const getProperty = function (obj, query) {
   return query.split('.').reduce((p, c) => (p && p[c]) || null, obj)
 }
-const setProperty = function (obj, query, value) {
-  query.split('.').reduce((o, p, i) => { o[p] = query.split('.').length === ++i ? value : o[p] || {} }, obj)
-}
+const setProperty = (object, path, value) => path
+  .split('.')
+  // eslint-disable-next-line no-return-assign
+  .reduce((o, p, i) => o[p] = path.split('.').length === ++i ? value : o[p] || {}, object)
 
 const bodyBinding = function (config, propMap, comp) {
   const props = componentPropertyMap.body[comp] || []
