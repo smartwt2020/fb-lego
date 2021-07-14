@@ -29,47 +29,73 @@ export default new Vuex.Store({
               body: {
                 property: ''
               },
-              property: {
+              property: {},
+              datasocket: {
+                datasocket: ''
               },
-              datasocket: {},
               events: {}
             },
             elements: {
               label: {
-                id: 'label-ASDFGHJKKL',
-                class: 'label-ASDFGHJKKL',
+                id: 'data-table-ASDFGHJKKL',
+                class: 'data-table-ASDFGHJKKL',
                 name: '',
                 discription: '',
-                component: 'fb-widget-label',
+                component: 'fb-widget-data-table',
                 parent: '',
                 type: 'content',
-                value: '{{property}}',
                 show: '',
+                datasocket: 'datasocket',
+                noDataText: 'No Data found',
+                header: [],
                 style: {
-                  fontFamily: '',
-                  fontSize: '16px',
-                  fontWeight: 'normal',
-                  textAlign: 'left',
-                  color: '#000000',
-                  background: 'transparent',
-                  textDecoration: 'none',
-                  fontStyle: 'normal',
-                  padding: '0px',
-                  margin: '0px',
-                  borderWidth: '0px',
-                  borderRadius: '0px',
-                  borderStyle: 'unset',
-                  borderColor: '#000000',
-                  textShadow: '0px 0px 0px #000000',
-                  boxShadow: '0px 0px 0px 0px #000000',
-                  cursor: 'pointer'
+                  table: {
+                    fontFamily: '',
+                    background: 'transparent',
+                    padding: '2px',
+                    margin: '0px',
+                    borderWidth: '0px',
+                    borderStyle: 'solid',
+                    borderColor: '#000000',
+                    borderRadius: '5px',
+                    textShadow: '0px 0px 0px #000000',
+                    boxShadow: '0px 0px 0px 0px #000000',
+                    cursor: 'pointer',
+                    width: 'calc(100% - 0px - 0px )',
+                    overflow: 'auto',
+                    height: 'calc(100% - 0px - 0px )'
+                  },
+                  th: {
+                    fontSize: '14px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#6f6f6f',
+                    background: '#e8e8e8',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    padding: '5px 0px 5px 10px',
+                    borderWidth: '0px 0px 1px 0px',
+                    borderStyle: 'solid',
+                    borderColor: '#b9b9b9'
+                  },
+                  td: {
+                    fontSize: '12px',
+                    fontWeight: 'normal',
+                    textAlign: 'left',
+                    color: '#818181',
+                    background: '#fafafa',
+                    textDecoration: 'none',
+                    fontStyle: 'normal',
+                    padding: '10px',
+                    borderWidth: '0px 0px 1px 0px',
+                    borderStyle: 'solid',
+                    borderColor: '#b9b9b9'
+                  }
                 },
                 events: {
                   click: ''
                 },
-                sudoStyle: {
-                  hover: {}
-                },
+                sudoStyle: {},
                 addOnStyle: {},
                 staticStyle: ''
               }

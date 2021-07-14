@@ -33,6 +33,7 @@ export default {
   },
   methods: {
     emitClickEvent (data) {
+      console.log('wdef')
       this.callMethod(this.config.events.click, data)
     }
   }

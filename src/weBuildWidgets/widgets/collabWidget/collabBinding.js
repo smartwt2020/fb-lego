@@ -27,7 +27,8 @@ const componentPropertyMap = {
     fbWidgetAreaChart: ['show'],
     fbWidgetBarChart: ['show'],
     fbWidgetPieChart: ['show'],
-    fbWidgetDonutChart: ['show']
+    fbWidgetDonutChart: ['show'],
+    fbWidgetDataTable: ['show']
   },
   datasocket: {
     fbWidgetKpiCard: ['datasocket'],
@@ -35,7 +36,8 @@ const componentPropertyMap = {
     fbWidgetAreaChart: ['datasocket'],
     fbWidgetBarChart: ['datasocket'],
     fbWidgetPieChart: ['datasocket'],
-    fbWidgetDonutChart: ['datasocket']
+    fbWidgetDonutChart: ['datasocket'],
+    fbWidgetDataTable: ['datasocket']
   }
 }
 
