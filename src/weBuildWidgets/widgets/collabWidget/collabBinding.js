@@ -42,7 +42,7 @@ const componentPropertyMap = {
 }
 
 const getProperty = function (obj, query) {
-  return query.split('.').reduce((p, c) => (p && p[c]) || null, obj)
+  return query.split('.').reduce((p, c) => (p && p[c]) || '', obj)
 }
 const setProperty = (object, path, value) => path
   .split('.')
