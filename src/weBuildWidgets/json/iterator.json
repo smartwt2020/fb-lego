@@ -20,7 +20,7 @@
   "style": {
     "height": "100%",
     "width": "100%",
-    "background": "#ffffff",
+    "backgroundColor": "#ffffff",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",
@@ -37,7 +37,7 @@
     "minHeight": "auto",
     "maxWidth": "auto",
     "minWidth": "auto",
-    "background": "#ffffff",
+    "backgroundColor": "#ffffff",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",

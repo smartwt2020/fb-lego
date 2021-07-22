@@ -19,7 +19,7 @@
     "color": "#88777747",
     "textDecoration": "none",
     "fontStyle": "normal",
-    "background": "#ffffff",
+    "backgroundColor": "#ffffff",
     "padding": "5px 0px 5px 5px",
     "margin": "0px",
     "borderWidth": "1px 1px 1px 1px",

@@ -7,7 +7,7 @@ import './jsonImport'
 Vue.use(wbWidget)
 window.application_mode = 'design'
 Vue.config.productionTip = false
-
+window.Vue = Vue
 new Vue({
   router,
   store,

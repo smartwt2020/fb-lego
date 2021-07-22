@@ -7,6 +7,7 @@
 import store from '@/store'
 import axios from 'axios'
 import log from './logMsg'
+import notification from '../plugins/notification'
 export default {
 
   isDesign: window.application_mode === 'design',
@@ -332,5 +333,8 @@ export default {
         }
       }
     }
+  },
+  Notifier (config = {}) {
+    notification(config)
   }
 }

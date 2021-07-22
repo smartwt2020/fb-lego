@@ -1,15 +1,14 @@
 {
-  "id": "paragraph-ASDFGHJKKL",
-  "class": "paragraph-ASDFGHJKKL",
+  "id": "youtube-ASDFGHJKKL",
+  "class": "youtube-ASDFGHJKKL",
   "name": "",
   "discription": "",
-  "component": "fb-widget-paragraph",
+  "component": "fb-widget-youtube",
   "parent": "",
-  "type": "content",
-  "value": "<h2>This is Paragraph</h2>",
+  "type": "media",
+  "src": "https://www.youtube.com/watch?v=ZFxw4lfzckI",
   "show": "",
   "style": {
-    "fontFamily": "",
     "backgroundColor": "transparent",
     "padding": "2px",
     "margin": "0px",
@@ -17,11 +16,9 @@
     "borderStyle": "solid",
     "borderColor": "#000000",
     "borderRadius": "5px",
-    "textShadow": "0px 0px 0px #000000",
     "boxShadow": "0px 0px 0px 0px #000000",
-    "cursor": "pointer",
     "width": "100%",
-    "overflow": "auto"
+    "overflow": "hidden"
   },
   "addOnStyle": {},
   "staticStyle": ""

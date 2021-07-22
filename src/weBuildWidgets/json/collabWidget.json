@@ -15,7 +15,7 @@
     "events": {}
   },
   "style": {
-    "background": "#ffffff",
+    "backgroundColor": "#ffffff",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",

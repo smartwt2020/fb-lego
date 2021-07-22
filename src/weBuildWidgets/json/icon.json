@@ -13,7 +13,7 @@
     "fontWeight": "normal",
     "textAlign": "left",
     "color": "#000000",
-    "background": "transparent",
+    "backgroundColor": "transparent",
     "textDecoration": "none",
     "fontStyle": "normal",
     "padding": "0px",

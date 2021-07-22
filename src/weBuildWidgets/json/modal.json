@@ -11,7 +11,7 @@
   "zIndex": 10,
   "transparency": 0.5,
   "style": {
-    "background": "#ffffff",
+    "backgroundColor": "#ffffff",
     "padding": "2px",
     "borderWidth": "0px",
     "borderStyle": "solid",

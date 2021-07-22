@@ -10,6 +10,8 @@ import link from './widgets/link'
 import button from './widgets/button'
 
 import image from './widgets/image'
+import iframe from './widgets/iframe'
+import youtube from './widgets/youtube'
 
 import input from './widgets/input'
 import textarea from './widgets/textarea'
@@ -45,6 +47,8 @@ export default {
     Vue.component('fbWidgetButton', button)
 
     Vue.component('fbWidgetImage', image)
+    Vue.component('fbWidgetIframe', iframe)
+    Vue.component('fbWidgetYoutube', youtube)
 
     Vue.component('fbWidgetInput', input)
     Vue.component('fbWidgetTextarea', textarea)

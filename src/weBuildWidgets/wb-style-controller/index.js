@@ -60,6 +60,8 @@ export const generateComponentCss = (element) => {
     case 'fb-widget-html':
     case 'fb-widget-form':
     case 'fb-widget-image':
+    case 'fb-widget-iframe':
+    case 'fb-widget-youtube':
     case 'fb-widget-line-chart':
     case 'fb-widget-paragraph':
     case 'fb-widget-pie-chart':

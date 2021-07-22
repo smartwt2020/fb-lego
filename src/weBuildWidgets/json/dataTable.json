@@ -13,7 +13,7 @@
   "style": {
     "table": {
       "fontFamily": "",
-      "background": "transparent",
+      "backgroundColor": "transparent",
       "padding": "2px",
       "margin": "0px",
       "borderWidth": "0px",
@@ -31,7 +31,7 @@
       "fontWeight": "normal",
       "textAlign": "left",
       "color": "#6f6f6f",
-      "background": "#e8e8e8",
+      "backgroundColor": "#e8e8e8",
       "textDecoration": "none",
       "fontStyle": "normal",
       "padding": "5px 0px 5px 10px",
@@ -44,7 +44,7 @@
       "fontWeight": "normal",
       "textAlign": "left",
       "color": "#818181",
-      "background": "#fafafa",
+      "backgroundColor": "#fafafa",
       "textDecoration": "none",
       "fontStyle": "normal",
       "padding": "10px",

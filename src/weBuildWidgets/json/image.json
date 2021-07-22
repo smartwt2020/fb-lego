@@ -11,7 +11,7 @@
   "fit": true,
   "style": {
     "fontFamily": "",
-    "background": "transparent",
+    "backgroundColor": "transparent",
     "padding": "0px",
     "margin": "0px",
     "borderWidth": "0px",

@@ -10,7 +10,7 @@
   "show": "",
   "style": {
     "fontFamily": "",
-    "background": "transparent",
+    "backgroundColor": "transparent",
     "padding": "2px",
     "margin": "0px",
     "borderWidth": "0px",
