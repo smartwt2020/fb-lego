@@ -2,11 +2,11 @@
   <div
     class="modal-widget-container"
     ref="widget"
-    v-if="hideElement">
-    <div :style="parentStyle">
-      <div :class="getClass" :id="config.id" :style="modalStyle">erfgwref</div>
-    </div>
-    awesfw
+    :style="parentStyle"
+    v-if="removeModal">
+      <div :class="getClass" :id="config.id">
+        <slot/>
+      </div>
   </div>
 </template>
 
@@ -23,11 +23,8 @@ export default {
         zIndex: this.config.zIndex
       }
     },
-    modalStyle () {
-      return {
-        height: this.config.height,
-        width: this.config.width
-      }
+    removeModal () {
+      return window.application_mode !== 'design' ? false : this.hideElement
     }
   }
 }
@@ -35,8 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .modal-widget-container {
-  display: none;
-  & > div {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -45,6 +41,5 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 }
 </style>

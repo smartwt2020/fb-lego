@@ -10,7 +10,7 @@
             <option v-for="widget in getWidgetList" :key="widget.id" :value="widget">{{widget}}</option>
           </select>
         </nav>
-        <div v-if="selectedComponent !== 'xxxxxxxxnoComponent'" :style="{height, width, margin: '70px auto'}">
+        <div v-if="selectedComponent !== 'xxxxxxxxnoComponent'" :style="{height, width, margin: '70px auto', position: 'relative'}">
           <component :is="ConfigData.component" :config="ConfigData" :data="data"/>
         </div>
       </div>
