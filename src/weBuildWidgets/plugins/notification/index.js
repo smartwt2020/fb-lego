@@ -106,7 +106,7 @@ function createNotification (config) {
  * @param {} config
  */
 function notifier (config) {
-  const _config = { ...tosterConfig, config }
+  const _config = { ...tosterConfig, ...config }
   const notification = createNotification(_config)
   const parentContainer = document.getElementById(`notifier-${_config.direction}`)
   setTimeout(() => {
