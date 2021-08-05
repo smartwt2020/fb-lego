@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 
 import './index.scss'
 const tosterConfig = {
@@ -17,16 +18,16 @@ const tosterConfig = {
 }
 
 /**
- * 
- * @param {*} color 
- * @returns 
+ *
+ * @param {*} color
+ * @returns
  */
 const crossSvgPath = (color = '#fff') => `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 4L12.5 11.75M21 19.5L12.5 11.75M12.5 11.75L20.5 4L4 19.5" stroke="${color}" stroke-width="4"/>
 </svg>`
 
 /**
- * 
+ *
  */
 function containerSetup () {
   ['tr', 'br', 'tl', 'bl'].forEach(e => {
@@ -40,10 +41,9 @@ function containerSetup () {
   })
 }
 
-
 /**
- * 
- * @param {*} element 
+ *
+ * @param {*} element
  */
 function closeNotification (element) {
   if (element) {
@@ -54,11 +54,10 @@ function closeNotification (element) {
   }
 }
 
-
 /**
- * 
- * @param {*} config 
- * @returns 
+ *
+ * @param {*} config
+ * @returns
  */
 function createNotification (config) {
   const notification = document.createElement('div')
@@ -80,8 +79,7 @@ function createNotification (config) {
       closeNotification(notification)
     })
     notification.append(closeButton)
-  } else if (config.type = 'prompt') {
-
+  } else if (config.type === 'prompt') {
     const yesButton = document.createElement('button')
     yesButton.innerHTML = 'Yes'
     yesButton.setAttribute('class', 'notifier-flag__promt')
@@ -104,11 +102,11 @@ function createNotification (config) {
 }
 
 /**
- * 
- * @param {} config 
+ *
+ * @param {} config
  */
 function notifier (config) {
-  const _config = {...tosterConfig, config}
+  const _config = { ...tosterConfig, config }
   const notification = createNotification(_config)
   const parentContainer = document.getElementById(`notifier-${_config.direction}`)
   setTimeout(() => {
@@ -119,9 +117,8 @@ function notifier (config) {
   if (_config.duration) {
     setTimeout(() => {
       closeNotification(notification)
-    }, _config.duration*1000)
+    }, _config.duration * 1000)
   }
-
 }
 
 containerSetup()

@@ -4,10 +4,10 @@
     :id="config.id"
     ref="widget"
     v-if="hideElement">
-    <p :id="`${config.id}-title`" v-html="config.title.value"/>
-    <p :id="`${config.id}-subtitle`" v-html="config.subtitle.value"/>
-    <p :id="`${config.id}-value`" v-html="config.value.value" />
-    <p :id="`${config.id}-footer`" v-html="config.footer.value" />
+    <p :id="`${config.id}-title`" v-html="GetValueString(config.title.value)"/>
+    <p :id="`${config.id}-subtitle`" v-html="GetValueString(config.subtitle.value)"/>
+    <p :id="`${config.id}-value`" v-html="GetValueString(config.value.value)" />
+    <p :id="`${config.id}-footer`" v-html="GetValueString(config.footer.value)" />
   </div>
 </template>
 

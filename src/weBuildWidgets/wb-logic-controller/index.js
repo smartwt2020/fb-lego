@@ -328,7 +328,7 @@ export default {
           if (AllPages.indexOf(page) === -1) {
           // logger.$errorLog(`page ${page} does not exist`)
           } else {
-            store.state.logic.CurrentPage = page
+            store.state.design.openPage = page
           }
         }
       }
